@@ -91,3 +91,19 @@ void input() {
 	}
 
 }
+
+void selectionsort()
+{
+	int i, j, min_index;
+
+	for (i = 0; i < n - 1; i++)
+	{
+		min_index = i;
+		for (j = i + 1; j < n; j++)
+		{
+			if (Agung[j] < Agung[min_index])
+				min_index = j;
+		}
+		swap(Agung[min_index], Agung[i]);
+	}
+}
