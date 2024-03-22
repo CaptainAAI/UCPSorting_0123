@@ -77,7 +77,7 @@ void input() {
 		if (n <= 23)
 			break;
 		else {
-			cout << "\nArray dapat mempunyai maksimal 11 elemen.\n";
+			cout << "\nArray dapat mempunyai maksimal 23 elemen.\n";
 		}
 	}
 	cout << endl;
