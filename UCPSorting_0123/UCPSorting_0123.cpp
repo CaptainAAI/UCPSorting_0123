@@ -107,3 +107,25 @@ void selectionsort()
 		swap(Agung[min_index], Agung[i]);
 	}
 }
+
+void display() {
+	cout << endl;
+	cout << "==================================" << endl;
+	cout << "Element Arraay yang telah tersusun" << endl;
+	cout << "==================================" << endl;
+	for (int j = 0; j < n; j++) {
+		cout << Agung[j] << endl;
+	}
+	cout << "jumlah pass = " << n - 1 << endl;
+	cout << endl;
+}
+
+int main()
+{
+	input();
+	selectionsort();
+	display();
+	system("pause");
+
+	return 0;
+}
