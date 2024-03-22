@@ -69,3 +69,25 @@ using namespace std;
 
 int n;
 int Agung[23];
+
+void input() {
+	while (true) {
+		cout << "Masukkan banyaknya elemen pada array : ";
+		cin >> n;
+		if (n <= 23)
+			break;
+		else {
+			cout << "\nArray dapat mempunyai maksimal 11 elemen.\n";
+		}
+	}
+	cout << endl;
+	cout << "==================================" << endl;
+	cout << "Masukkan Elemen Array" << endl;
+	cout << "==================================" << endl;
+
+	for (int i = 0; i < n; i++) {
+		cout << "Data ke-" << (i + 1) << ": ";
+		cin >> Agung[i];
+	}
+
+}
